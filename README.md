@@ -40,7 +40,7 @@ const practices = [
 ]
 ```
 
-2. Add the practice file into index.html :
+3. Add the practice file into index.html :
 
 ```html
   <script src="practices/data.js"></script>
