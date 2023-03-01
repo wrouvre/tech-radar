@@ -326,6 +326,11 @@ function radar_visualization(config) {
               .attr("target", function (d, i) {
                  return (d.link && config.links_in_new_tabs) ? "_blank" : null;
               })
+              // Add an opening modal if description
+              .on("click", function(d, event) {
+                return (d.description) ? displayModal(d.label, d.description) : null;
+              })
+
             .append("text")
               .attr("transform", function(d, i) { return legend_transform(quadrant, ring, i); })
               .attr("class", "legend" + quadrant + ring)
@@ -421,6 +426,12 @@ function radar_visualization(config) {
       if (config.links_in_new_tabs) {
         blip.attr("target", "_blank");
       }
+    }
+
+    // blip description
+    if (d.active && d.hasOwnProperty("description") && d.description) {
+      blip = blip
+        .on("click", function(d, event) {displayModal(d.label, d.description)});
     }
 
     // blip shape

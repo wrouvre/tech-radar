@@ -21,7 +21,8 @@ const dataRadar = {
             ring: 0,
             label: "S3",
             active: true,
-            link: "https://aws.amazon.com/fr/s3/",
+            description: "Nous recommandons ce service managé <i>tip top</i> que nous recommandons",
+            //link: "https://aws.amazon.com/fr/s3/",
             moved: 0,
         },
         {
