@@ -13,14 +13,14 @@ const practices = [
     },
     {
         name: "Agile",
-        radar: mobileRadar
+        radar: agileRadar
     },
     {
         name: "Software Engineering",
-        radar: mobileRadar
+        radar: softwareengineeringRadar
     },
     {
         name: "Modern Archi",
-        radar: mobileRadar
+        radar: architectureRadar
     }
 ]
