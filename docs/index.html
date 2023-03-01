@@ -7,7 +7,7 @@
     content="Zalando Tech Radar: a tool to visualize technology choices, inspire and support Engineering teams at Zalando to pick the best technologies for new projects">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ippon Tech Radar</title>
-  <link rel="shortcut icon" href="https://www.zalando.de/favicon.ico">
+  <link rel="shortcut icon" href="https://fr.ippon.tech/application/themes/ippon-dot-theme/images/favicon.ico">
 
   <script src="practices/data.js"></script>
   <script src="practices/mobile.js"></script>
@@ -29,19 +29,32 @@
 
     // practices list
     var practiceList = document.getElementById("practiceList");
-    for (var i = 0; i < practices.length; i++) {
-      let p = practices[i].radar;
+    for (let i = 0; i < practices.length; i++) {
+      let practice = practices[i];
       var el = document.createElement('li');
-      el.innerHTML = practices[i].name;
-      el.onclick = function () { radar(p); };
+      var link = document.createElement('a')
+      link.textContent = practice.name;
+      link.setAttribute('href', '#' + i);
+      el.append(link);
+      //el.innerHTML = 
+      el.onclick = function () { buildRadar(practice); };
       practiceList.appendChild(el);
     }
     
     // build radar
-    function radar(radar) {
+    function buildRadar(practice) {
       document.getElementById("radar").innerHTML = "";
-      config.quadrants = radar.quadrants;
-      config.entries = radar.entries;
+      if (!practice) {
+        if (window.location.hash) {
+          practice = practices[window.location.hash.substr(1)];
+        }
+        else {
+          practice = practices[0];
+        }
+      }
+      config.quadrants = practice.radar.quadrants;
+      config.entries = practice.radar.entries;
+      config.title = "Ippon Nantes Radar - " + practice.name;
       radar_visualization(config);
     }
 
@@ -56,7 +69,6 @@
       },
       title: "Ippon Nantes Radar",
       date: "2023.03",
-      quadrants: dataRadar.quadrants,
       rings: [
         { name: "ADOPT", color: "#5ba300" },
         { name: "TRIAL", color: "#009eb0" },
@@ -66,12 +78,9 @@
       print_layout: true,
       links_in_new_tabs: true,
       // zoomed_quadrant: 0,
-      //ENTRIES
-      entries: dataRadar.entries
-      //ENTRIES
     }
 
-    radar_visualization(config);
+    buildRadar();
 
   </script>
 
