@@ -9,7 +9,7 @@ const practices = [
     },
     {
         name: "Devops Cloud",
-        radar: mobileRadar
+        radar: devopscloudRadar
     },
     {
         name: "Agile",

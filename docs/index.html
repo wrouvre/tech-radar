@@ -11,6 +11,7 @@
 
   <script src="practices/data.js"></script>
   <script src="practices/mobile.js"></script>
+  <script src="practices/devopscloud.js"></script>
   <script src="practices/practices.js"></script>
 
   <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -27,21 +28,21 @@
 
   <script>
 
-    // practices list
-    var practiceList = document.getElementById("practiceList");
-    for (let i = 0; i < practices.length; i++) {
-      let practice = practices[i];
-      var el = document.createElement('li');
-      var link = document.createElement('a')
-      link.textContent = practice.name;
-      link.setAttribute('href', '#' + i);
-      el.append(link);
-      //el.innerHTML = 
-      el.onclick = function () { buildRadar(practice); };
-      practiceList.appendChild(el);
+    function buildPracticeList() {
+      var practiceList = document.getElementById("practiceList");
+      for (let i = 0; i < practices.length; i++) {
+        let practice = practices[i];
+        var el = document.createElement('li');
+        var link = document.createElement('a')
+        link.textContent = practice.name;
+        link.setAttribute('href', '#' + i);
+        el.append(link);
+        //el.innerHTML = 
+        el.onclick = function () { buildRadar(practice); };
+        practiceList.appendChild(el);
+      }
     }
     
-    // build radar
     function buildRadar(practice) {
       document.getElementById("radar").innerHTML = "";
       if (!practice) {
@@ -80,6 +81,7 @@
       // zoomed_quadrant: 0,
     }
 
+    buildPracticeList();
     buildRadar();
 
   </script>
