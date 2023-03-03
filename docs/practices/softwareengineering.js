@@ -221,7 +221,7 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "Architecture Hexa",
       active: true,
-      moved: 0,
+      moved: 1,
     },
     {
       quadrant: 2,
@@ -242,7 +242,7 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "Design Pattern",
       active: true,
-      moved: 0,
+      moved: 1,
     },
     {
       quadrant: 2,
@@ -267,7 +267,7 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "Jest",
       active: true,
-      moved: 0,
+      moved: -1,
     },
     {
       quadrant: 3,

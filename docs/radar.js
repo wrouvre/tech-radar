@@ -297,7 +297,7 @@ function radar_visualization(config) {
 
     // legend
     var legend = radar.append("g");
-    for (var quadrant = 0; quadrant < 4; quadrant++) {
+    for (let quadrant = 0; quadrant < 4; quadrant++) {
       legend.append("text")
         .attr("transform", translate(
           legend_offset[quadrant].x,
@@ -307,7 +307,7 @@ function radar_visualization(config) {
         .style("font-family", "Arial, Helvetica")
         .style("font-size", "18px")
         .style("font-weight", "bold");
-      for (var ring = 0; ring < 4; ring++) {
+      for (let ring = 0; ring < 4; ring++) {
         legend.append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
@@ -328,7 +328,8 @@ function radar_visualization(config) {
               })
               // Add an opening modal if description
               .on("click", function(d, event) {
-                return (d.description) ? displayModal(d.label, d.description) : null;
+                var title = d.label +' - ' + config.quadrants[quadrant].name + ' - ' + config.rings[ring].name;
+                return (d.description) ? displayModal(title, d.description) : null;
               })
 
             .append("text")
@@ -430,8 +431,9 @@ function radar_visualization(config) {
 
     // blip description
     if (d.active && d.hasOwnProperty("description") && d.description) {
+      var title = d.label + ' - ' + config.quadrants[d.quadrant].name + ' - ' + config.rings[d.ring].name;
       blip = blip
-        .on("click", function(d, event) {displayModal(d.label, d.description)});
+        .on("click", function(d, event) {displayModal(title, d.description)});
     }
 
     // blip shape

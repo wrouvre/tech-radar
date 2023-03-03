@@ -37,7 +37,7 @@ const dataRadar = {
             ring: 0,
             label: "Big Query",
             active: true,
-            moved: 0,
+            moved: 1,
         },
         {
             quadrant: 0,
@@ -60,7 +60,7 @@ const dataRadar = {
             ring: 0,
             label: "Snowflake",
             active: true,
-            moved: 0,
+            moved: -1,
         },
         {
             quadrant: 0,
@@ -74,7 +74,7 @@ const dataRadar = {
             ring: 2,
             label: "Firebolt",
             active: true,
-            moved: 0,
+            moved: 1,
         },
 
         // Dataplatform
@@ -90,7 +90,7 @@ const dataRadar = {
             ring: 3,
             label: "Hadoop",
             active: true,
-            moved: 0,
+            moved: 1,
         },
 
         // Quadrant 1

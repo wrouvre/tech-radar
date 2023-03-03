@@ -70,3 +70,16 @@ td {
   text-decoration: none;
   cursor: pointer;
 }
+
+.bottom{
+  display: flex;  
+  align-items: flex-start;
+
+  justify-content: space-between;
+  margin:5px;
+}
+
+.bottom>.item {
+  flex: 1 1 0;
+  margin: 5px;
+}
