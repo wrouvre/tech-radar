@@ -13,7 +13,8 @@ function buildPracticeList() {
 }
 
 function buildRadar(practice) {
-  document.getElementById("radar").innerHTML = "";
+  document.getElementById("radar").innerHTML = "";      
+
   if (!practice) {
     if (window.location.hash) {
       practice = practices[window.location.hash.substr(1)];
@@ -22,6 +23,7 @@ function buildRadar(practice) {
       practice = practices[0];
     }
   }
+
   config.quadrants = practice.radar.quadrants;
   config.entries = practice.radar.entries;
   config.title = "Ippon Nantes Radar - " + practice.name;
@@ -40,10 +42,10 @@ var config = {
   title: "Ippon Nantes Radar",
   date: "2023.03",
   rings: [
-    { name: "ADOPT", color: "#5ba300" },
-    { name: "TRIAL", color: "#009eb0" },
-    { name: "ASSESS", color: "#c7ba00" },
-    { name: "HOLD", color: "#e09b96" }
+    { name: "ADOPT", color: "#00CCA5" },
+    { name: "TRIAL", color: "#003CDC" },
+    { name: "ASSESS", color: "#ffc100" },
+    { name: "HOLD", color: "#ff4c41" }
   ],
   print_layout: true,
   links_in_new_tabs: true,

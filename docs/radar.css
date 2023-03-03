@@ -7,34 +7,23 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #fff;
+}
+#practiceList>img {
+  float:right;
+  height:50px;
 }
 #practiceList>li>a {
   float: left;
   display: block;
-  color: white;
+  color: #003CDC;
   text-align: center;
   padding: 16px;
   text-decoration: none;
 }
-
-
-h3 {
-  margin-top: 50px;
+#practiceList>li>a.selected {
+  color: orange;
 }
-li {
-  margin: 25px 50px 0 0;
-}
-table {
-  width: 1400px;
-  margin: 0 50px 0 50px;
-}
-td {
-  width: 50%;
-  vertical-align: top;
-  padding-right: 60px;
-}
-
 
 .modal {
   display: none;
@@ -69,6 +58,12 @@ td {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+
+h3 {
+  margin-top: 50px;
 }
 
 .bottom{
