@@ -26,7 +26,7 @@ function buildRadar(practice) {
 
   config.quadrants = practice.radar.quadrants;
   config.entries = practice.radar.entries;
-  config.title = "Ippon Nantes Radar - " + practice.name;
+  config.title = "Ippon Technologies Radar - " + practice.name;
   radar_visualization(config);
 }
 
