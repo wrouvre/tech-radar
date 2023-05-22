@@ -39,7 +39,7 @@ var config = {
     grid: '#dddde0',
     inactive: "#ddd"
   },
-  title: "Ippon Nantes Radar",
+  title: "Ippon Technologies Radar",
   date: "2023.03",
   rings: [
     { name: "ADOPT", color: "#00CCA5" },
