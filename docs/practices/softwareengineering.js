@@ -369,6 +369,13 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 3,
+      ring: 3,
+      label: "TestNG",
+      active: true,
+      moved: -1,
+    },
+    {
+      quadrant: 3,
       ring: 0,
       label: "JUnit",
       active: true,
