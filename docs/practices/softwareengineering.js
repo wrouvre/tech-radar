@@ -2,7 +2,7 @@
 const softwareengineeringRadar = {  
   // Quadrants
   quadrants: [
-    { name: "Langages & Frameworks" },
+    { name: "Languages & Frameworks" },
     { name: "Bundler" },
     { name: "Concepts" },
     { name: "Tests" },
@@ -15,7 +15,7 @@ const softwareengineeringRadar = {
 
     // Quadrant 0
 
-    // Langages
+    // Languages
     {
       quadrant: 0,
       ring: 0,
