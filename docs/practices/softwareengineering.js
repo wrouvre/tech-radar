@@ -381,6 +381,33 @@ const softwareengineeringRadar = {
       active: true,
       moved: 0,
     },
-
+    {
+      quadrant: 3,
+      ring: 0,
+      label: "Assertj",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 3,
+      ring: 0,
+      label: "Mockito",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 3,
+      ring: 0,
+      label: "ArchUnit",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 3,
+      ring: 0,
+      label: "Awaitility",
+      active: true,
+      moved: 0,
+    },
   ]
 }
