@@ -297,5 +297,13 @@ const softwareengineeringRadar = {
       active: true,
       moved: 0,
     },
+    {
+      quadrant: 3,
+      ring: 3,
+      label: "JUnit Jupiter",
+      active: true,
+      moved: 0,
+    },
+
   ]
 }
