@@ -272,6 +272,13 @@ const softwareengineeringRadar = {
     {
       quadrant: 3,
       ring: 0,
+      label: "Vitest",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 3,
+      ring: 0,
       label: "Selenium",
       active: true,
       moved: 0,
