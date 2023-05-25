@@ -25,6 +25,13 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 0,
+      ring: 3,
+      label: "Flyway",
+      active: true,
+      moved: -1,
+    },
+    {
+      quadrant: 0,
       ring: 0,
       label: "Javascript / Typescript",
       active: true,
