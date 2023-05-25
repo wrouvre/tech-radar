@@ -369,6 +369,14 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 3,
+      ring: 3,
+      label: "TestNG",
+      active: true,
+      moved: -1,
+      description: "We prefer using JUnit with fluent descriptive annotations from Assertj"
+    },
+    {
+      quadrant: 3,
       ring: 0,
       label: "JUnit",
       active: true,
@@ -377,9 +385,10 @@ const softwareengineeringRadar = {
     {
       quadrant: 3,
       ring: 3,
-      label: "JUnit Jupiter",
+      label: "JUnit Jupiter Assertions",
       active: true,
       moved: 0,
+      description: "We prefer using JUnit with fluent descriptive annotations from Assertj"
     },
 
   ]
