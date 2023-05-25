@@ -3,7 +3,7 @@ const softwareengineeringRadar = {
   // Quadrants
   quadrants: [
     { name: "Langages & Frameworks" },
-    { name: "Bundler" },
+    { name: "Bundler & Locale DevX" },
     { name: "Concepts" },
     { name: "Tests" },
   ],
@@ -155,7 +155,7 @@ const softwareengineeringRadar = {
 
     // Quadrant 1
 
-    // Bundler
+    // Bundler & Locale DevX
     {
       quadrant: 1,
       ring: 0,
@@ -174,6 +174,27 @@ const softwareengineeringRadar = {
       quadrant: 1,
       ring: 1,
       label: "ESBuild",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "ESLint",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "prettier",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "Husky",
       active: true,
       moved: 0,
     },
