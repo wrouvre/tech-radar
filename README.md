@@ -24,6 +24,14 @@ const dataRadar = {
 
   // Entries
   entries: [
+    {
+      quadrant: 0, // quadrant reference [number]
+      ring: 0, // ring reference [number]
+      label: "Scrum", // entry name [text]
+      active: true, // entry visible [bool]
+      description: "Lorem ipsum <i>arcu</i> non dapibus.", // entry description modal [text/html]
+      moved: 0, // entry evolution [-1/0/1]
+    },
     ...
   ]
 }
