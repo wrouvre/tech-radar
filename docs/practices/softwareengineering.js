@@ -15,7 +15,7 @@ const softwareengineeringRadar = {
 
     // Quadrant 0
 
-    // Langages
+    // Languages
     {
       quadrant: 0,
       ring: 0,
@@ -25,8 +25,36 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 0,
+      ring: 3,
+      label: "Flyway",
+      active: true,
+      moved: -1,
+    },
+    {
+      quadrant: 0,
+      ring: 0,
+      label: "Liquibase",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 0,
       ring: 0,
       label: "Javascript / Typescript",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 0,
+      ring: 0,
+      label: "RxJS",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 0,
+      ring: 0,
+      label: "Axios",
       active: true,
       moved: 0,
     },
@@ -92,6 +120,27 @@ const softwareengineeringRadar = {
       quadrant: 0,
       ring: 0,
       label: "Spring",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "Maven",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "Gradle",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "npm",
       active: true,
       moved: 0,
     },
@@ -293,6 +342,13 @@ const softwareengineeringRadar = {
     {
       quadrant: 3,
       ring: 0,
+      label: "Vitest",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 3,
+      ring: 0,
       label: "Selenium",
       active: true,
       moved: 0,
@@ -318,5 +374,13 @@ const softwareengineeringRadar = {
       active: true,
       moved: 0,
     },
+    {
+      quadrant: 3,
+      ring: 3,
+      label: "JUnit Jupiter",
+      active: true,
+      moved: 0,
+    },
+
   ]
 }

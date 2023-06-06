@@ -1,7 +1,7 @@
 # Motivation
 
-At [Ippon](https://fr.ippon.tech/), we maintain a Practices Radar based on Zalando one [public Tech
-Radar](http://zalando.github.io/tech-radar/) to help our engineering & saff teams
+At [Ippon](https://fr.ippon.tech/), we maintain a [Practices Radar](https://wrouvre.github.io/tech-radar/) 
+based on Zalando one [public Tech Radar](http://zalando.github.io/tech-radar/) to help our engineering & saff teams
 align on technology choices. It is based on the [pioneering work
 by ThoughtWorks](https://www.thoughtworks.com/radar).
 
@@ -24,6 +24,14 @@ const dataRadar = {
 
   // Entries
   entries: [
+    {
+      quadrant: 0, // quadrant reference [number]
+      ring: 0, // ring reference [number]
+      label: "Amazing tech", // entry name [text]
+      active: true, // entry visible [bool]
+      description: "Lorem ipsum <i>arcu</i> non dapibus.", // entry description modal [text/html]
+      moved: 0, // entry evolution [-1/0/1]
+    },
     ...
   ]
 }
