@@ -33,6 +33,13 @@ const softwareengineeringRadar = {
     {
       quadrant: 0,
       ring: 0,
+      label: "Liquibase",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 0,
+      ring: 0,
       label: "Javascript / Typescript",
       active: true,
       moved: 0,
