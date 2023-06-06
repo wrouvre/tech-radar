@@ -103,6 +103,27 @@ const softwareengineeringRadar = {
       moved: 0,
     },
     {
+      quadrant: 1,
+      ring: 0,
+      label: "Maven",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "Gradle",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
+      label: "npm",
+      active: true,
+      moved: 0,
+    },
+    {
       quadrant: 0,
       ring: 0,
       label: "Node",
