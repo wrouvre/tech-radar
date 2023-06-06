@@ -54,6 +54,13 @@ const softwareengineeringRadar = {
     {
       quadrant: 0,
       ring: 0,
+      label: "Axios",
+      active: true,
+      moved: 0,
+    },
+    {
+      quadrant: 0,
+      ring: 0,
       label: "Python",
       active: true,
       moved: 0,
