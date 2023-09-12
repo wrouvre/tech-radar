@@ -3,9 +3,9 @@ const agileproductdesignRadar = {
   // Quadrants
   quadrants: [
     { name: "Frameworks" },
-    { name: "Outils" },
-    { name: "Concepts" },
-    { name: "Pierre" },
+    { name: "Tools and Deliverables" },
+    { name: "Workshops" },
+    { name: "Method, Practice and Approach" },
   ],
 
   // Rings : 0=ADOPT ; 1=TRIAL ; 2=ASSESS ; 3=HOLD
