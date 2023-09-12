@@ -1,5 +1,5 @@
 
-const agileRadar = {  
+const agileproductdesignRadar = {
   // Quadrants
   quadrants: [
     { name: "Frameworks" },
