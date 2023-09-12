@@ -2,9 +2,9 @@
 const architectureRadar = {  
   // Quadrants
   quadrants: [
-    { name: "IT Solution Building Blocks" },
-    { name: "Functional Solution Building Blocks" },
-    { name: "Patterns & Styles" },
+    { name: "Solution Building Blocks" },
+    { name: "Application Patterns & Styles" },
+    { name: "Enterprise Patterns & Styles" },
     { name: "Methods & Approaches" },
   ],
 
@@ -24,28 +24,28 @@ const architectureRadar = {
     {
       quadrant: 0,
       ring: 0,
-      label: "RSBMS - Postgre",
+      label: "RDBMS - Postgre",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "RSBMS - Oracle",
+      label: "RDBMS - Oracle",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "RSBMS - RDS",
+      label: "RDBMS - RDS",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "RSBMS - SQLServer",
+      label: "RDBMS - SQLServer",
       active: true,
       moved: 0,
     },
@@ -199,11 +199,12 @@ const architectureRadar = {
       moved: 0,
     },
 
-    // Quadrant 1 - Functional Solution Building Blocks
+    //  Functional Solution Building Blocks
 
     // CRM
+    /* pas encore utilisé en tant que consultant
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 3,
       label: "Salesforce",
       active: true,
@@ -218,10 +219,10 @@ const architectureRadar = {
       active: false,
       moved: 0,
     },
-
+    */
     // CMS
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 1,
       label: "CMS - Directus",
       active: true,
@@ -230,88 +231,106 @@ const architectureRadar = {
 
     // ECM
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 1,
-      label: "Alfresco",
+      label: "GED - Alfresco",
       active: true,
       moved: 0,
     },
 
     // MDM
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 2,
-      label: "Blueway",
+      label: "MDM/APIM Blueway",
       active: true,
       moved: 0,
     },
 
-    // Quadrant 2
+    // Quadrant 1
 
     // Pattern
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Monolith",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 1,
       label: "Modular Monolith",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Streaming",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Event sourcing",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Change Data Capture",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "CQRS",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "BFF",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Strangler Pattern",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Micro Frontend",
       active: true,
       moved: 0,
     },
+
+    // Quadrant 2
+    {
+      quadrant: 2,
+      ring: 2,
+      label: "Plateform Enterprise",
+      active: true,
+      moved: 0,
+    },
+
+    {
+      quadrant: 2,
+      ring: 1,
+      label: "Design Authority",
+      active: true,
+      moved: 0,
+    },
+
 
     // Quadrant 3
 
@@ -324,7 +343,7 @@ const architectureRadar = {
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 3,
       ring: 3,
       label: "Model Driven Design",
       active: true,
