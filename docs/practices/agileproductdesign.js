@@ -5,7 +5,7 @@ const agileproductdesignRadar = {
     { name: "Frameworks" },
     { name: "Tools and Deliverables" },
     { name: "Workshops" },
-    { name: "Method, Practice and Approach" },
+    { name: "Methods, approaches and practices" },
   ],
 
   // Rings : 0=ADOPT ; 1=TRIAL ; 2=ASSESS ; 3=HOLD
@@ -14,7 +14,48 @@ const agileproductdesignRadar = {
   entries: [
 
     // Workshops
-    {quadrant:2,ring:0,label:"X",active:true,description:"",moved: -1},
+    {quadrant:2,ring:0,label:"Experience Map",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"User story mapping",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"User Journey Mapping",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Exemple Mapping",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Existing User Flow",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Proto Personas",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Empathy map",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Jobs to be Done",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Extreme Quotation",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"User Test",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Focus Group",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Value Proposition Canvas",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Impact Mapping",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"3 amigos",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Users Interviews",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Stakeholder interviews",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Team Charter / Team Canvas",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Elevator Pitch",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Product tree",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Atelier Co-conception",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Sketching Workshop",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Planning Poker",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Lean Canvas",active:true,description:"",moved: 0},
+    {quadrant:2,ring:0,label:"Event Storming",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"product board",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"value stream mapping",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Mind the Gap",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Atelier Scamper",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Impact radar",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Experience Diary",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"quality storming",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"No Estimate",active:true,description:"",moved: 1},
+    {quadrant:2,ring:1,label:"Stakeholder map",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Business Process Model (BPMM)",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Atelier Blueprint",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Guerilla Research",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Brainwriting workshop",active:true,description:"",moved: 0},
+    {quadrant:2,ring:1,label:"Tri des cartes",active:true,description:"",moved: 0},
+    {quadrant:2,ring:2,label:"Meddler Game",active:true,description:"",moved: 0},
+    {quadrant:2,ring:2,label:"Box on the shelf",active:true,description:"",moved: 0},
+
+    // Methods, approaches and practices
 
     // Tools and deliverables
     {quadrant:1,ring:0,label:"Trello",active:true,description:"",moved: -1},
