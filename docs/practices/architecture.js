@@ -2,10 +2,10 @@
 const architectureRadar = {  
   // Quadrants
   quadrants: [
-    { name: "Solutions" },
-    { name: "Building Blocks" },
-    { name: "Pattern" },
-    { name: "Ateliers" },
+    { name: "Solution Building Blocks" },
+    { name: "Application Patterns & Styles" },
+    { name: "Enterprise Patterns & Styles" },
+    { name: "Methods & Approaches" },
   ],
 
   // Rings : 0=ADOPT ; 1=TRIAL ; 2=ASSESS ; 3=HOLD
@@ -13,34 +13,39 @@ const architectureRadar = {
   // Entries
   entries: [
 
-    // Quadrant 0
+    // Note from Jean-Rémy Revy, 21/08/05
+    // According to architects convictions, please consider using the following notation : [ABB] - [SBB]
+    // Architecture Building Blocks is a concept, eg:RDBMS
+    // Solution Build Blocks is a solution implementing a concept, eg:Postgre SQL
+
+    // Quadrant 0 - IT Solution Building Blocks
 
     // RDBMS
     {
       quadrant: 0,
       ring: 0,
-      label: "Postgre",
+      label: "RDBMS - Postgre",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "Oracle",
+      label: "RDBMS - Oracle",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "RDS",
+      label: "RDBMS - RDS",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "SQLServer",
+      label: "RDBMS - SQLServer",
       active: true,
       moved: 0,
     },
@@ -63,28 +68,28 @@ const architectureRadar = {
     {
       quadrant: 0,
       ring: 0,
-      label: "Mongo",
+      label: "NoSQL - Mongo",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "Cassandra",
+      label: "NoSQL - Cassandra",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "Firestore",
+      label: "NoSQL - Firestore",
       active: true,
       moved: 0,
     },
     {
       quadrant: 0,
       ring: 0,
-      label: "DynamoDB",
+      label: "NoSQL - DynamoDB",
       active: true,
       moved: 0,
     },
@@ -135,11 +140,9 @@ const architectureRadar = {
       moved: 0,
     },
     
-    // Quadrant 1
-
     // Concept
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 2,
       label: "Vertical-market clouds",
       active: true,
@@ -148,57 +151,62 @@ const architectureRadar = {
 
     // API Management
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 0,
-      label: "Kong",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 1,
-      ring: 0,
-      label: "WSO2",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 1,
-      ring: 0,
-      label: "Apigee",
+      label: "APIM - Kong",
       active: true,
       moved: 0,
     },
 
-    // CRM
     {
-      quadrant: 1,
-      ring: 3,
-      label: "Salesforce",
+      quadrant: 0,
+      ring: 0,
+      label: "APIM - WSO2",
+      active: true,
+      moved: 0,
+    },
+
+    {
+      quadrant: 0,
+      ring: 0,
+      label: "APIM - Apigee",
       active: true,
       moved: 0,
     },
 
     // ESB
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 3,
-      label: "Mulesoft",
+      label: "ESB - Mulesoft",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 3,
-      label: "WSO2",
+      label: "ESB - WSO2",
       active: true,
       moved: 0,
     },
 
     // BPM
     {
-      quadrant: 1,
+      quadrant: 0,
       ring: 0,
-      label: "Camunda",
+      label: "BPM - Camunda",
+      active: true,
+      moved: 0,
+    },
+
+    //  Functional Solution Building Blocks
+
+    // CRM
+    /* pas encore utilisé en tant que consultant
+    {
+      quadrant: 0,
+      ring: 3,
+      label: "Salesforce",
       active: true,
       moved: 0,
     },
@@ -208,94 +216,139 @@ const architectureRadar = {
       quadrant: 1,
       ring: 3,
       label: "SAP",
+      active: false,
+      moved: 0,
+    },
+    */
+    // CMS
+    {
+      quadrant: 0,
+      ring: 1,
+      label: "CMS - Directus",
       active: true,
       moved: 0,
     },
 
-    // Quadrant 2
+    // ECM
+    {
+      quadrant: 0,
+      ring: 1,
+      label: "GED - Alfresco",
+      active: true,
+      moved: 0,
+    },
+
+    // MDM
+    {
+      quadrant: 0,
+      ring: 2,
+      label: "MDM/APIM Blueway",
+      active: true,
+      moved: 0,
+    },
+
+    // Quadrant 1
 
     // Pattern
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
-      label: "Monolithe",
+      label: "Monolith",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
-      ring: 0,
-      label: "Monolithe modulaire",
+      quadrant: 1,
+      ring: 1,
+      label: "Modular Monolith",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Streaming",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Event sourcing",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
-      label: "CDC",
+      label: "Change Data Capture",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "CQRS",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "BFF",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Strangler Pattern",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
       label: "Micro Frontend",
       active: true,
       moved: 0,
     },
 
-    // Pratiques
+    // Quadrant 2
     {
       quadrant: 2,
+      ring: 2,
+      label: "Plateform Enterprise",
+      active: true,
+      moved: 0,
+    },
+
+    {
+      quadrant: 2,
+      ring: 1,
+      label: "Design Authority",
+      active: true,
+      moved: 0,
+    },
+
+
+    // Quadrant 3
+
+    // Pratiques
+    {
+      quadrant: 3,
       ring: 0,
-      label: "DDD Stratégique",
+      label: "Domain Driven Design (strategic)",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 3,
       ring: 3,
       label: "Model Driven Design",
       active: true,
       moved: 0,
     },
-
-    // Quadrant 3
 
     // Ateliers
     {
@@ -314,15 +367,8 @@ const architectureRadar = {
     },
     {
       quadrant: 3,
-      ring: 0,
+      ring: 1,
       label: "Value Stream Mapping",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 3,
-      ring: 0,
-      label: "Event storming",
       active: true,
       moved: 0,
     },
