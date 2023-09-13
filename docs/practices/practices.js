@@ -1,6 +1,6 @@
 const practices = [
     {
-        name: "Agile Product Design",
+        name: "Agile, Product & Design",
         radar: agileproductdesignRadar
     },
     {
