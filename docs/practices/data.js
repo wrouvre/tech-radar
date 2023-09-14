@@ -2,10 +2,12 @@
 const dataRadar = {
     // Quadrants
     quadrants: [
-        { name: "Storage" },
-        { name: "Compute" },
-        { name: "Scientist" },
-        { name: "Analytics" },
+
+        { name: "0 - Data Architeture" },
+        { name: "1 - Data Engineering" },
+        { name: "2 - Data Science & MLOps" },
+        { name: "3 - Analytics Engineering" },
+        
     ],
 
     // Rings : 0=ADOPT ; 1=TRIAL ; 2=ASSESS ; 3=HOLD
@@ -13,43 +15,89 @@ const dataRadar = {
     // Entries
     entries: [
 
-        // Quadrant 0
+         // Quadrant 0 : Data Architeture     ========================
 
-        // Datalake
-        {
+
+         // 0 - ADOPT
+         {
             quadrant: 0,
             ring: 0,
-            label: "S3",
+            label: "Serverless",
             active: true,
             description: "Nous recommandons ce service managé <i>tip top</i> que nous recommandons",
             //link: "https://aws.amazon.com/fr/s3/",
             moved: 0,
         },
-        {
+         {
             quadrant: 0,
             ring: 0,
-            label: "Athena",
+            label: "Startburst",
             active: true,
             moved: 0,
         },
+        {
+            quadrant: 0,
+            ring: 0,
+            label: "Data Lakehouse",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 0,
+            ring: 0,
+            label: "Data Lake",
+            active: true,
+            moved: 0,
+        },
+
+        {
+            quadrant: 0,
+            ring: 0,
+            label: "Data Warehouse",
+            active: true,
+            moved: 0,
+        },
+
+        {
+            quadrant: 0,
+            ring: 0,
+            label: "ELT",
+            active: true,
+            moved: 0,
+        },
+        
+         // 1 - TRAIL
+         
+
+         // 2 - ASSESS
+         {
+            quadrant: 0,
+            ring: 2,
+            label: "Data Fabric",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 0,
+            ring: 2,
+            label: "Data Mesh",
+            active: true,
+            moved: 0,
+        },
+        // Datalake
+       
         {
             quadrant: 0,
             ring: 0,
             label: "Big Query",
             active: true,
-            moved: 1,
-        },
-        {
-            quadrant: 0,
-            ring: 0,
-            label: "Google Cloud Storage",
-            active: true,
             moved: 0,
         },
+        
         {
             quadrant: 0,
             ring: 1,
-            label: "Synapse",
+            label: "Azure Data Fabric",
             active: true,
             moved: 0,
         },
@@ -60,12 +108,13 @@ const dataRadar = {
             ring: 0,
             label: "Snowflake",
             active: true,
-            moved: -1,
+            moved: 0,
         },
+      
         {
             quadrant: 0,
-            ring: 0,
-            label: "Redshift",
+            ring: 2,
+            label: "Redshift Serverless",
             active: true,
             moved: 0,
         },
@@ -76,7 +125,35 @@ const dataRadar = {
             active: true,
             moved: 1,
         },
-
+        {
+            quadrant: 0,
+            ring: 2,
+            label: "MWAA",
+            active: true,
+            moved: 1,
+        },
+        {
+            quadrant: 0,
+            ring: 1,
+            label: "Airbyte",
+            active: true,
+            moved: 1,
+        },
+        {
+            quadrant: 0,
+            ring: 1,
+            label: "Prefect",
+            active: true,
+            moved: 1,
+        },
+        {
+            quadrant: 0,
+            ring: 2,
+            label: "Dagster",
+            active: true,
+            moved: 1,
+        },
+        
         // Dataplatform
         {
             quadrant: 0,
@@ -85,6 +162,7 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
+           // 3 - HOLD
         {
             quadrant: 0,
             ring: 3,
@@ -93,9 +171,35 @@ const dataRadar = {
             moved: 1,
         },
 
-        // Quadrant 1
 
-        // Streaming
+     
+
+
+        // Quadrant 1 : Data Engineering     ========================
+
+        // 0 ADOP 
+        {
+            quadrant: 1,
+            ring: 0,
+            label: "Flink",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 1,
+            ring: 0,
+            label: "Spark",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 1,
+            ring: 0,
+            label: "Scala",
+            active: true,
+            moved: 0,
+        },
+      
         {
             quadrant: 1,
             ring: 0,
@@ -103,13 +207,7 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "MSK",
-            active: true,
-            moved: 0,
-        },
+     
         {
             quadrant: 1,
             ring: 0,
@@ -120,19 +218,12 @@ const dataRadar = {
         {
             quadrant: 1,
             ring: 0,
-            label: "PubSbub",
+            label: "PubSub",
             active: true,
             moved: 0,
         },
 
-        // Compute
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "Serverless",
-            active: true,
-            moved: 0,
-        },
+     
         {
             quadrant: 1,
             ring: 0,
@@ -143,26 +234,12 @@ const dataRadar = {
         {
             quadrant: 1,
             ring: 0,
-            label: "EMR",
+            label: "Docker",
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "Glue",
-            active: true,
-            moved: 0,
-        },
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "Cloud Function",
-            active: true,
-            moved: 0,
-        },
-
-        // Orchestrateur
+    
+        // 
         {
             quadrant: 1,
             ring: 0,
@@ -173,7 +250,7 @@ const dataRadar = {
         {
             quadrant: 1,
             ring: 0,
-            label: "Step Function",
+            label: "Step Functions",
             active: true,
             moved: 0,
         },
@@ -184,6 +261,16 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
+
+        // ASSESS
+
+        {
+            quadrant: 0,
+            ring: 2,
+            label: "Mage",
+            active: true,
+            moved: 1,
+        },
         {
             quadrant: 1,
             ring: 2,
@@ -191,29 +278,9 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 1,
-            ring: 2,
-            label: "Dagster",
-            active: true,
-            moved: 0,
-        },
 
         // ELT
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "DBT",
-            active: true,
-            moved: 0,
-        },
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "Airbyte",
-            active: true,
-            moved: 0,
-        },
+     
         {
             quadrant: 1,
             ring: 3,
@@ -240,7 +307,7 @@ const dataRadar = {
         {
             quadrant: 1,
             ring: 0,
-            label: "Great Expectation",
+            label: "Great Expectations",
             active: true,
             moved: 0,
         },
@@ -274,38 +341,106 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
+        // Quadrant 2 : Data Science & MLOps ========================
 
-        // Quadrant 2
-
-        // ML Managé
-        {
+         // 0 - ADOPT 
+         {
             quadrant: 2,
             ring: 0,
-            label: "Rekognition",
+            label: "Amazon Comprehend",
             active: true,
             moved: 0,
         },
         {
             quadrant: 2,
             ring: 0,
-            label: "Comprehend",
+            label: "AWS Rekognition",
+            active: true,
+            moved: 0,
+        },
+
+        {
+            quadrant: 2,
+            ring: 0,
+            label: "AWS SageMaker",
+            active: true,
+            moved: 0,
+        },
+
+         // 1 - TRIAL
+         {
+            quadrant: 2,
+            ring: 1,
+            label: "Kubeflow",
+            active: true,
+            moved: 0,
+        },
+        
+
+         // 2 - ASSESS
+
+         // 3 - HOLD 
+         {
+            quadrant: 2,
+            ring: 3,
+            label: "CamemBERT",
+            active: true,
+            moved: 0,
+        },
+
+
+         {
+            quadrant: 2,
+            ring: 2,
+            label: "HuggingFace",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 2,
+            ring: 2,
+            label: "WhyLabs",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 2,
+            ring: 2,
+            label: "OpenAI",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 2,
+            ring: 2,
+            label: "Bedrock",
+            active: true,
+            moved: 0,
+        },
+       
+      
+        {
+            quadrant: 2,
+            ring: 1,
+            label: "Amazon Forecast",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 2,
+            ring: 2,
+            label: "LangChain",
             active: true,
             moved: 0,
         },
         {
             quadrant: 2,
             ring: 1,
-            label: "Forecast",
+            label: "Azure ML",
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 2,
-            ring: 1,
-            label: "ML Azure",
-            active: true,
-            moved: 0,
-        },
+        /*
         {
             quadrant: 2,
             ring: 1,
@@ -313,22 +448,9 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
-
+        */
         // ML Custom
-        {
-            quadrant: 2,
-            ring: 0,
-            label: "Sagemaker (training, pipeline & deploy)",
-            active: true,
-            moved: 0,
-        },
-        {
-            quadrant: 2,
-            ring: 1,
-            label: "SageMaker (feature store, model monitor, clarify)",
-            active: true,
-            moved: 0,
-        },
+       
         {
             quadrant: 2,
             ring: 1,
@@ -343,22 +465,22 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 2,
-            ring: 1,
-            label: "Kubeflow",
-            active: true,
-            moved: 0,
-        },
+       // ==== END Quadrant 2 ====================================================================
 
-        // Quadrant 3
+
+       // Quadrant3 - Analytics Engineering ======================== 
+
+        // 0 - ADOPT 
+      
         {
             quadrant: 3,
             ring: 0,
-            label: "Quicksight",
+            label: "dbt",
             active: true,
             moved: 0,
         },
+     
+    
         {
             quadrant: 3,
             ring: 0,
@@ -368,10 +490,68 @@ const dataRadar = {
         },
         {
             quadrant: 3,
-            ring: 3,
+            ring: 0,
             label: "PowerBI",
             active: true,
             moved: 0,
         },
+        
+        // 1 - TRIAL 
+        
+        // 0 - ASSESS 
+        
+        // 0 - HOLD 
+        {
+            quadrant: 3,
+            ring: 3,
+            label: "Quicksight",
+            active: true,
+            moved: 0,
+        },
+
+        {
+            quadrant: 3,
+            ring: 1,
+            label: "Superset",
+            active: true,
+            moved: 0,
+        },
+
+        {
+            quadrant: 3,
+            ring: 2,
+            label: "Tableau",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 3,
+            ring: 2,
+            label: "Thougthspot",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 3,
+            ring: 2,
+            label: "Sisense",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 3,
+            ring: 2,
+            label: "Qlik",
+            active: true,
+            moved: 0,
+        },
+
+      
+
+ 
+
+      
+       
+        
     ]
 }
