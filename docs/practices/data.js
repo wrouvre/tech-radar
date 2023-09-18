@@ -3,10 +3,10 @@ const dataRadar = {
     // Quadrants
     quadrants: [
 
-        { name: "0 - Data Architeture" },
-        { name: "1 - Data Engineering" },
-        { name: "2 - Data Science & MLOps" },
-        { name: "3 - Analytics Engineering" },
+        { name: "Data Governance " },
+        { name: "Data Engineering" },
+        { name: "Data Science & MLOps" },
+        { name: "Data Analytics" },
         
     ],
 
@@ -19,72 +19,56 @@ const dataRadar = {
 
 
          // 0 - ADOPT
-         {
-            quadrant: 0,
-            ring: 0,
-            label: "Serverless",
-            active: true,
-            description: "Nous recommandons ce service managé <i>tip top</i> que nous recommandons",
-            //link: "https://aws.amazon.com/fr/s3/",
-            moved: 0,
-        },
-         {
+        {
             quadrant: 0,
             ring: 0,
             label: "Startburst",
             active: true,
             moved: 0,
         },
+     
+
         {
             quadrant: 0,
-            ring: 0,
-            label: "Data Lakehouse",
+            ring: 2,
+            label: "Sifflet",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 0,
+            ring: 2,
+            label: "Monte Carlo",
             active: true,
             moved: 0,
         },
         {
             quadrant: 0,
             ring: 0,
-            label: "Data Lake",
+            label: "Great Expectations",
             active: true,
             moved: 0,
         },
 
-        {
-            quadrant: 0,
-            ring: 0,
-            label: "Data Warehouse",
-            active: true,
-            moved: 0,
-        },
 
-        {
-            quadrant: 0,
-            ring: 0,
-            label: "ELT",
-            active: true,
-            moved: 0,
-        },
+        
         
          // 1 - TRAIL
          
 
          // 2 - ASSESS
-         {
-            quadrant: 0,
-            ring: 2,
-            label: "Data Fabric",
-            active: true,
-            moved: 0,
-        },
+         
+       
+        // Datalake
         {
             quadrant: 0,
-            ring: 2,
-            label: "Data Mesh",
+            ring: 1,
+            label: "Castor",
             active: true,
             moved: 0,
         },
-        // Datalake
+
+
        
         {
             quadrant: 0,
@@ -102,6 +86,29 @@ const dataRadar = {
             moved: 0,
         },
         
+        {
+            quadrant: 0,
+            ring: 1,
+            label: "OpenMetadata",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 0,
+            ring: 1,
+            label: "Data Galaxy",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 0,
+            ring: 2,
+            label: "Zeenea",
+            active: true,
+            moved: 0,
+        },
+
+
         // Datawarehouse
         {
             quadrant: 0,
@@ -125,34 +132,9 @@ const dataRadar = {
             active: true,
             moved: 1,
         },
-        {
-            quadrant: 0,
-            ring: 2,
-            label: "MWAA",
-            active: true,
-            moved: 1,
-        },
-        {
-            quadrant: 0,
-            ring: 1,
-            label: "Airbyte",
-            active: true,
-            moved: 1,
-        },
-        {
-            quadrant: 0,
-            ring: 1,
-            label: "Prefect",
-            active: true,
-            moved: 1,
-        },
-        {
-            quadrant: 0,
-            ring: 2,
-            label: "Dagster",
-            active: true,
-            moved: 1,
-        },
+    
+       
+      
         
         // Dataplatform
         {
@@ -192,18 +174,12 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "Scala",
-            active: true,
-            moved: 0,
-        },
+      
       
         {
             quadrant: 1,
             ring: 0,
-            label: "Kinesis",
+            label: "Amazon Kinesis ",
             active: true,
             moved: 0,
         },
@@ -218,16 +194,7 @@ const dataRadar = {
         {
             quadrant: 1,
             ring: 0,
-            label: "PubSub",
-            active: true,
-            moved: 0,
-        },
-
-     
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "ECS",
+            label: "Google PubSub",
             active: true,
             moved: 0,
         },
@@ -250,10 +217,11 @@ const dataRadar = {
         {
             quadrant: 1,
             ring: 0,
-            label: "Step Functions",
+            label: "Airbyte",
             active: true,
-            moved: 0,
+            moved: 1,
         },
+        
         {
             quadrant: 1,
             ring: 1,
@@ -261,11 +229,31 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
+        {
+            quadrant: 1,
+            ring: 1,
+            label: "DuckDB",
+            active: true,
+            moved: 1,
+        },
+       
+        {
+            quadrant: 1,
+            ring: 1,
+            label: "SingleStore",
+            active: true,
+            moved: 1,
+        },
+
+        
+
+
+
 
         // ASSESS
 
         {
-            quadrant: 0,
+            quadrant: 1,
             ring: 2,
             label: "Mage",
             active: true,
@@ -304,20 +292,8 @@ const dataRadar = {
         },
 
         // DRE
-        {
-            quadrant: 1,
-            ring: 0,
-            label: "Great Expectations",
-            active: true,
-            moved: 0,
-        },
-        {
-            quadrant: 1,
-            ring: 2,
-            label: "Sifflet",
-            active: true,
-            moved: 0,
-        },
+       
+     
         {
             quadrant: 1,
             ring: 2,
@@ -325,22 +301,10 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
-        {
-            quadrant: 1,
-            ring: 2,
-            label: "Monte Carlo",
-            active: true,
-            moved: 0,
-        },
+      
 
         // Catalog
-        {
-            quadrant: 1,
-            ring: 3,
-            label: "Castor",
-            active: true,
-            moved: 0,
-        },
+       
         // Quadrant 2 : Data Science & MLOps ========================
 
          // 0 - ADOPT 
@@ -403,6 +367,16 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
+
+        {
+            quadrant: 2,
+            ring: 2,
+            label: "ChromaDB",
+            active: true,
+            moved: 0,
+        },
+     
+
         {
             quadrant: 2,
             ring: 2,
@@ -413,7 +387,7 @@ const dataRadar = {
         {
             quadrant: 2,
             ring: 2,
-            label: "Bedrock",
+            label: "Amazon Bedrock",
             active: true,
             moved: 0,
         },
@@ -519,6 +493,21 @@ const dataRadar = {
 
         {
             quadrant: 3,
+            ring: 1,
+            label: "Google dataform",
+            active: true,
+            moved: 0,
+        },
+        {
+            quadrant: 3,
+            ring: 1,
+            label: "SQLMesh",
+            active: true,
+            moved: 0,
+        },
+
+        {
+            quadrant: 3,
             ring: 2,
             label: "Tableau",
             active: true,
@@ -545,6 +534,7 @@ const dataRadar = {
             active: true,
             moved: 0,
         },
+        
 
       
 
