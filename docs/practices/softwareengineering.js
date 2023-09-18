@@ -208,6 +208,14 @@ const softwareengineeringRadar = {
     {
       quadrant: 1,
       ring: 0,
+      label: "JHipster-Lite",
+      active: true,
+      description: "The marvellous 'Craftsmanship-friendly' project generator, that gives you a customizable stack preset with hexagonal architecture, DDD concepts, component testing, architecture testing [...]. <a href='https://lite.jhipster.tech/landscape'>With JHipster-Lite, there's no 'technical Sprint #0'.</a>",
+      moved: 0,
+    },
+    {
+      quadrant: 1,
+      ring: 0,
       label: "Webpack",
       active: true,
       moved: 0,
