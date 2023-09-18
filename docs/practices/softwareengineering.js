@@ -270,6 +270,23 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "DDD",
       active: true,
+      description: "Domain-Driven Design is a wide toolbox that MUST ABSOLUTELY be used on your project. Either to understand its strategically patterns to split responsibilities at a higher-level, or its tactical ones to get a well-structured maintainable code.",
+      moved: 0,
+    },
+    {
+      quadrant: 2,
+      ring: 0,
+      label: "CQRS",
+      active: true,
+      description: "An architecture that has its complexity and may have synchronization drawbacks depending on your implementation, but a great one to solve specific issues. <a href='https://martinfowler.com/bliki/CQRS.html'>Martin Fowler delivers his insights on his website</a>",
+      moved: 0,
+    },
+    {
+      quadrant: 2,
+      ring: 0,
+      label: "Event Sourcing",
+      active: true,
+      description: "Not the easiest pattern at all! But you need to understand this one to understand how to compose events rather than inanimate data. <a href='https://martinfowler.com/eaaDev/EventSourcing.html'>Martin Fowler explains it all on his website</a>",
       moved: 0,
     },
     {
@@ -277,6 +294,7 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "TDD",
       active: true,
+      description: "Test-Driven Development is a very misunderstood practice. Often compared as a testing practice, it can rather be qualified as a design practice to make your functional behavior emerge from scratch, from inside the code itself. <a href='https://blog.ippon.fr/2023/01/18/mon-apprentissage-du-tdd/'>Cédric Magne delivers its learning tips and feedback of TDD on our blog</a>",
       moved: 0,
     },
     {
@@ -284,20 +302,23 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "BDD",
       active: true,
+      description: "Behavior-Driven Development is not a testing practice. It is an alignment and communication tool to share a business understanding of your product. <a href='https://blog.ippon.fr/2021/02/24/4-idees-recues-sur-le-bdd-behavior-driven-development/'>Grégory Elhaimer warns you about BDD misunderstanding on our blog</a>",
       moved: 0,
     },
     {
       quadrant: 2,
       ring: 0,
-      label: "Architecture Hexa",
+      label: "Hexagonal Architecture",
       active: true,
+      description: "Want to see an example of implementing hexagonal architecture in a Java/Spring environment? <a href='https://blog.ippon.fr/2021/02/17/spring-boot-hexagone/'>Colin Damon talks about it on our blog</a>",
       moved: 1,
     },
     {
       quadrant: 2,
       ring: 0,
-      label: "Clean Archi",
+      label: "Clean Architecture",
       active: true,
+      description: "In the family of the hexagonal architecture, clean architecture is also a way to split responsibility between your business logic and your technologies. <a href='https://alistair.cockburn.us/hexagonal-architecture/'>Alistair Cockburn introduces hexagonal architecture as its underlying principle</a>",
       moved: 0,
     },
     {
@@ -310,8 +331,9 @@ const softwareengineeringRadar = {
     {
       quadrant: 2,
       ring: 0,
-      label: "Design Pattern",
+      label: "Code Smells",
       active: true,
+      description: "One of the most important things to understand to deliver a maintainable code: to recognized bad practices, i.e. code smells. We like sharing <a href='https://refactoring.guru/refactoring/smells'>the great imaged library of Refactoring Guru to understand what are our worst nightmares</a>",
       moved: 1,
     },
     {
