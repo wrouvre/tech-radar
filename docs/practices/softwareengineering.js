@@ -1,5 +1,5 @@
 
-const softwareengineeringRadar = {  
+const softwareengineeringRadar = {
   // Quadrants
   quadrants: [
     { name: "Langages & Frameworks" },
@@ -337,7 +337,7 @@ const softwareengineeringRadar = {
       ring: 0,
       label: "Jest",
       active: true,
-      moved: -1,
+      moved: 0,
     },
     {
       quadrant: 3,
@@ -348,10 +348,11 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 3,
-      ring: 0,
+      ring: 3,
       label: "Selenium",
       active: true,
-      moved: 0,
+      description: "Component and end-to-end testing with <a href='https://www.cypress.io/'>Cypress</a>, for the win! Cypress integrates perfectly with TDD practice when used as a component testing tool (not 'graphical component'), see <a href='https://blog.ippon.fr/2019/07/11/des-tests-de-composants-avec-cypress/'>Anthony Rey's post on our blog</a>",
+      moved: -1,
     },
     {
       quadrant: 3,
