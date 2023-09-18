@@ -251,6 +251,14 @@ const dataRadar = {
 
 
         // ASSESS
+        {
+            quadrant: 1,
+            ring: 2,
+            label: "Precfect",
+            active: true,
+            moved: 1,
+        },
+
 
         {
             quadrant: 1,
