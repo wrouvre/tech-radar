@@ -214,10 +214,10 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 1,
-      ring: 0,
+      ring: 1,
       label: "Vite",
       active: true,
-      moved: 0,
+      moved: 1,
     },
     {
       quadrant: 1,
