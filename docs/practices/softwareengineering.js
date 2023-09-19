@@ -81,7 +81,7 @@ const softwareengineeringRadar = {
     },
     {
       quadrant: 0,
-      ring: 1,
+      ring: 0,
       label: "Kotlin",
       active: true,
       moved: 0,
