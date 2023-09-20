@@ -341,13 +341,6 @@ const devopscloudRadar = {
       active: true,
       moved: 0,
     },
-    {
-      quadrant: 3,
-      ring: 0,
-      label: "Serverless",
-      active: true,
-      moved: 0,
-    },
 
     // Dev    
     {
