@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Open Sans Bold";
   src:
-          url("OpenSans-Bold.ttf");
+          url("font/OpenSans-Bold.ttf");
 }
 @font-face {
   font-family: "Open Sans";
   src:
-          url("OpenSans-Regular.ttf");
+          url("font/OpenSans-Regular.ttf");
 }
 @font-face {
   font-family: "Open Sans Medium";
   src:
-          url("OpenSans-Medium.ttf");
+          url("font/OpenSans-Medium.ttf");
 }
 @font-face {
   font-family: "Open Sans Light";
   src:
-          url("OpenSans-Light.ttf");
+          url("font/OpenSans-Light.ttf");
 }
 body {
   font-family: 'Open Sans', arial, helvetica, sans-serif;
@@ -38,6 +38,7 @@ body {
   fill: #393939;
   translate: 0 -10px;
 }
+
 #practiceList {
   list-style-type: none;
   padding: 0;
@@ -51,12 +52,23 @@ body {
 #practiceList>li {
   padding: 16px;
 }
+
 #practiceList>li>a {
   color: #999;
   text-decoration: none;
+  padding: 16px;
 }
-#practiceList>li>a.selected {
-  color: orange;
+
+#practiceList>li>a:hover,
+#practiceList>li>a:active {
+  color: #000;
+  text-decoration: none;
+  opacity: 1;
+  background-color: #eee;
+}
+
+#practiceList>li>a:focus {
+  border: 1px solid #003cdc;
 }
 
 h2 {
