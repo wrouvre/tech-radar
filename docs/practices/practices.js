@@ -16,7 +16,7 @@ const practices = [
         radar: mobileRadar
     },
     {
-        name: "Modern Archi",
+        name: "Modern Architecture",
         radar: architectureRadar
     },
     {
