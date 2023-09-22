@@ -55,16 +55,16 @@ function radar_visualization(config) {
   ];
 
   const title_offset =
-    { x: -675, y: -420 };
+    { x: -400, y: -420 };
 
   const footer_offset =
     { x: -675, y: 420 };
 
   const legend_offset = [
-    { x: 450, y: 90 },
-    { x: -675, y: 90 },
-    { x: -675, y: -310 },
-    { x: 450, y: -310 }
+    { x: 0, y: 490 },
+    { x: -400, y: 490 },
+    { x: -400, y: 850 },
+    { x: 0, y: 850 }
   ];
 
   function polar(cartesian) {
@@ -246,9 +246,9 @@ function radar_visualization(config) {
         .attr("y", -rings[i].radius + 62)
         .attr("text-anchor", "middle")
         .style("fill", config.rings[i].color)
-        .style("opacity", 0.35)
-        .style("font-family", "Arial, Helvetica")
-        .style("font-size", "42px")
+        .style("opacity", 0.8)
+        .style("font-family", "Open Sans, Helvetica")
+        .style("font-size", "36px")
         .style("font-weight", "bold")
         .style("pointer-events", "none")
         .style("user-select", "none");
@@ -274,16 +274,18 @@ function radar_visualization(config) {
     radar.append("text")
       .attr("transform", translate(title_offset.x, title_offset.y))
       .text(config.title)
-      .style("font-family", "Arial, Helvetica")
+      .style("font-family", "Open Sans, Helvetica")
       .style("font-size", "30")
       .style("font-weight", "bold")
+        .attr("class", 'page-title')
+
 
     // date
     radar
       .append("text")
       .attr("transform", translate(title_offset.x, title_offset.y + 20))
       .text(config.date || "")
-      .style("font-family", "Arial, Helvetica")
+      .style("font-family", "Open Sans, Helvetica")
       .style("font-size", "14")
       .style("fill", "#999")
 
@@ -292,7 +294,7 @@ function radar_visualization(config) {
       .attr("transform", translate(footer_offset.x, footer_offset.y))
       .text("▲ moved up     ▼ moved down")
       .attr("xml:space", "preserve")
-      .style("font-family", "Arial, Helvetica")
+      .style("font-family", "Open Sans, Helvetica")
       .style("font-size", "10px");
 
     // legend
@@ -304,15 +306,15 @@ function radar_visualization(config) {
           legend_offset[quadrant].y - 45
         ))
         .text(config.quadrants[quadrant].name)
-        .style("font-family", "Arial, Helvetica")
-        .style("font-size", "18px")
+        .style("font-family", "Open Sans, Helvetica")
+        .style("font-size", "24px")
         .style("font-weight", "bold");
       for (let ring = 0; ring < 4; ring++) {
         legend.append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
-          .style("font-family", "Arial, Helvetica")
-          .style("font-size", "12px")
+          .style("font-family", "Open Sans, Helvetica")
+          .style("font-size", "18px")
           .style("font-weight", "bold")
           .style("fill", config.rings[ring].color);
         legend.selectAll(".legend" + quadrant + ring)
@@ -337,10 +339,11 @@ function radar_visualization(config) {
               .attr("class", "legend" + quadrant + ring)
               .attr("id", function(d, i) { return "legendItem" + d.id; })
               .text(function(d, i) { return d.id + ". " + d.label; })
-              .style("font-family", "Arial, Helvetica")
+              .style("font-family", "Open Sans, Helvetica")
               .style("font-size", "11px")
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
+
       }
     }
   }
@@ -479,4 +482,5 @@ function radar_visualization(config) {
     .velocityDecay(0.19) // magic number (found by experimentation)
     .force("collision", d3.forceCollide().radius(12).strength(0.85))
     .on("tick", ticked);
+  radar.attr("transform", translate(430, 500));
 }

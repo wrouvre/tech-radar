@@ -26,14 +26,13 @@ function buildRadar(practice) {
 
   config.quadrants = practice.radar.quadrants;
   config.entries = practice.radar.entries;
-  config.title = "Ippon Technologies Radar - " + practice.name;
+  config.title = practice.name;
   radar_visualization(config);
 }
 
 var config = {
   svg_id: "radar",
-  width: 1450,
-  height: 1000,
+  height: 1700,
   colors: {
     background: "#fff",
     grid: '#dddde0',
@@ -42,10 +41,10 @@ var config = {
   title: "Ippon Technologies Radar",
   date: "2023.03",
   rings: [
-    { name: "ADOPT", color: "#00CCA5" },
-    { name: "TRIAL", color: "#003CDC" },
-    { name: "ASSESS", color: "#ffc100" },
-    { name: "HOLD", color: "#ff4c41" }
+    { name: "Adopt", color: "#003CDC" },
+    { name: "Trial", color: "#ffcd00" },
+    { name: "Assess", color: "#6D0718" },
+    { name: "Hold", color: "#ff4c41" }
   ],
   print_layout: true,
   links_in_new_tabs: true,

@@ -1,28 +1,89 @@
+@font-face {
+  font-family: "Open Sans Bold";
+  src:
+          url("OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src:
+          url("OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Open Sans Medium";
+  src:
+          url("OpenSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src:
+          url("OpenSans-Light.ttf");
+}
 body {
-  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
   padding-bottom: 50px;
+}
+
+.container {
+  margin: auto;
+}
+
+#radar {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 1%;
+  box-shadow: 0 0 40px rgba(1, 1, 1, .1), 0 0 3px rgba(1, 1, 1, .1);
+}
+
+.page-title {
+  fill: #393939;
+  translate: 0 -10px;
 }
 #practiceList {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 30px;
 }
-#practiceList>img {
-  float:right;
-  height:50px;
+#practiceList>li {
+  padding: 16px;
 }
 #practiceList>li>a {
-  float: left;
-  display: block;
-  color: #003CDC;
-  text-align: center;
-  padding: 16px;
+  color: #999;
   text-decoration: none;
 }
 #practiceList>li>a.selected {
   color: orange;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.card-container {
+  justify-content: space-between;
+  display: flex;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0 10px 10px 0;
+}
+
+.card-title {
+  color: #003cdc;
+  font-weight: bold;
+}
+
+.card-img-top {
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+
 }
 
 .modal {
@@ -60,21 +121,7 @@ body {
   cursor: pointer;
 }
 
-
-
-h3 {
-  margin-top: 50px;
-}
-
-.bottom{
-  display: flex;  
-  align-items: flex-start;
-
-  justify-content: space-between;
-  margin:5px;
-}
-
-.bottom>.item {
-  flex: 1 1 0;
-  margin: 5px;
+a {
+  text-decoration: none;
+  padding: 5px;
 }
