@@ -2,10 +2,10 @@
 const architectureRadar = {  
   // Quadrants
   quadrants: [
-    { name: "Solutions" },
-    { name: "Building Blocks" },
-    { name: "Pattern" },
-    { name: "Ateliers" },
+    { name: "Architecture Building Blocks" },
+    { name: "Application Patterns & Styles" },
+    { name: "Enterprise Patterns & Styles" },
+    { name: "Methods & Approaches" },
   ],
 
   // Rings : 0=ADOPT ; 1=TRIAL ; 2=ASSESS ; 3=HOLD
@@ -13,289 +13,137 @@ const architectureRadar = {
   // Entries
   entries: [
 
-    // Quadrant 0
 
-    // RDBMS
+    // Quadrant 0 - Architecture Building Blocks
+
     {
       quadrant: 0,
       ring: 0,
-      label: "Postgre",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "Oracle",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "RDS",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "SQLServer",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 2,
-      label: "Archipels",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 2,
-      label: "CrystalChain",
+      label: "API Gateways",
       active: true,
       moved: 0,
     },
 
-    // NoSQL
     {
       quadrant: 0,
       ring: 0,
-      label: "Mongo",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "Cassandra",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "Firestore",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "DynamoDB",
-      active: true,
-      moved: 0,
-    },
-
-    // API
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "REST",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 3,
-      label: "SOAP",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "GraphQL",
-      active: true,
-      moved: 0,
-    },
-
-    // MOM
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "Kafka",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 0,
-      label: "RabbitMQ",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 0,
-      ring: 2,
-      label: "Pulsar",
-      active: true,
-      moved: 0,
-    },
-    
-    // Quadrant 1
-
-    // Concept
-    {
-      quadrant: 1,
-      ring: 2,
-      label: "Vertical-market clouds",
-      active: true,
-      moved: 0,
-    },
-
-    // API Management
-    {
-      quadrant: 1,
-      ring: 0,
-      label: "Kong",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 1,
-      ring: 0,
-      label: "WSO2",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 1,
-      ring: 0,
-      label: "Apigee",
-      active: true,
-      moved: 0,
-    },
-
-    // CRM
-    {
-      quadrant: 1,
-      ring: 3,
-      label: "Salesforce",
+      label: "API Managers",
       active: true,
       moved: 0,
     },
 
     // ESB
     {
-      quadrant: 1,
-      ring: 3,
-      label: "Mulesoft",
+      quadrant: 0,
+      ring: 2,
+      label: "Enterprise Service Bus",
       active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 1,
-      ring: 3,
-      label: "WSO2",
-      active: true,
-      moved: 0,
+      moved: -1,
     },
 
     // BPM
     {
-      quadrant: 1,
-      ring: 0,
-      label: "Camunda",
+      quadrant: 0,
+      ring: 1,
+      label: "Business Process Managers",
       active: true,
-      moved: 0,
+      moved: +1,
     },
 
-    // ERP
+    // CMS
     {
-      quadrant: 1,
-      ring: 3,
-      label: "SAP",
+      quadrant: 0,
+      ring: 1,
+      label: "Headless CMS",
+      active: true,
+      moved: +1,
+    },
+
+    // ECM
+    {
+      quadrant: 0,
+      ring: 1,
+      label: "Enterprise Content Management",
+      active: true,
+      moved: +1,
+    },
+
+    // MDM
+    {
+      quadrant: 0,
+      ring: 2,
+      label: "Master Data Management",
       active: true,
       moved: 0,
     },
 
-    // Quadrant 2
+    // Quadrant 1
 
     // Pattern
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
-      label: "Monolithe",
+      label: "Loosely Coupled Architectures",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 1,
       ring: 0,
-      label: "Monolithe modulaire",
+      label: "REST Style",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
-      ring: 0,
-      label: "Streaming",
+      quadrant: 1,
+      ring: 3,
+      label: "SOAP",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
-      ring: 0,
-      label: "Event sourcing",
+      quadrant: 1,
+      ring: 1,
+      label: "GraphQL",
       active: true,
-      moved: 0,
+      moved: +1,
     },
+
+    // Quadrant 2
     {
       quadrant: 2,
-      ring: 0,
-      label: "CDC",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 2,
-      ring: 0,
-      label: "CQRS",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 2,
-      ring: 0,
-      label: "BFF",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 2,
-      ring: 0,
-      label: "Strangler Pattern",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 2,
-      ring: 0,
-      label: "Micro Frontend",
+      ring: 2,
+      label: "Plateform Enterprise",
       active: true,
       moved: 0,
     },
 
-    // Pratiques
     {
       quadrant: 2,
+      ring: 1,
+      label: "Design Authority",
+      active: true,
+      moved: 0,
+    },
+
+
+    // Quadrant 3
+
+    // Pratiques
+    {
+      quadrant: 3,
       ring: 0,
-      label: "DDD Stratégique",
+      label: "Domain Driven Design (strategic)",
       active: true,
       moved: 0,
     },
     {
-      quadrant: 2,
+      quadrant: 3,
       ring: 3,
       label: "Model Driven Design",
       active: true,
       moved: 0,
     },
-
-    // Quadrant 3
 
     // Ateliers
     {
@@ -314,15 +162,8 @@ const architectureRadar = {
     },
     {
       quadrant: 3,
-      ring: 0,
+      ring: 1,
       label: "Value Stream Mapping",
-      active: true,
-      moved: 0,
-    },
-    {
-      quadrant: 3,
-      ring: 0,
-      label: "Event storming",
       active: true,
       moved: 0,
     },

@@ -6,7 +6,7 @@ const dataRadar = {
         { name: "Data Governance " },
         { name: "Data Engineering" },
         { name: "Data Science & MLOps" },
-        { name: "Data Analytics" }
+        { name: "Data Analytics" },
         
     ],
 
@@ -251,14 +251,6 @@ const dataRadar = {
 
 
         // ASSESS
-        {
-            quadrant: 1,
-            ring: 2,
-            label: "Prefect",
-            active: true,
-            moved: 1,
-        },
-
 
         {
             quadrant: 1,
