@@ -75,6 +75,34 @@ yarn start
 http://localhost:3000/
 ```
 
+## Contributing
+
+Any contributions, bigger or smaller ones, are welcome, we thank you! Even the slightest documentation is an improvement
+to the global consistency of this radar.
+
+3 points to ease your configuration:
+1. This project is based on GitHub, [you will need to fork this repository to suggest improvements](https://help.github.com/articles/fork-a-repo)
+2. From your local Git, clone your fork `git clone git@github.com:<YOUR_USERNAME>/tech-radar.git`
+3. Bind your forked local repo to the common upstream `git remote add upstream git@github.com:ippontech/tech-radar.git`
+
+From here you'll be able to fetch and contribute with such commands:
+1. Fetching upstream updates: `git fetch upstream && git rebase upstream/master`
+2. Creating a new branch: `git switch -c <YOUR_BRANCHNAME>`
+3. Committing and pushing: `git add -A && git commit -m "<your commit atomic explanation message>" && git push origin`
+4. Copy the help supplied by your local git command and use it: `git push --set-upstream origin <YOUR_BRANCHNAME>` 
+5. Open a pull request on link supplied such as `https://github.com/<YOUR_USERNAME>/tech-radar/pull/new/<YOUR_BRANCHNAME>
+6. On GitHub interface, do not forget to set the base repository as `ippontech/tech-radar` to create the pull request against common upstream
+
+To easily review others' pull requests, you can edit your `.git/config`, and update this section:
+```
+[remote "upstream"]
+	url = git@github.com:ippontech/tech-radar.git
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+	fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+```
+This will allow you to locally fetch remote pull requests using `git fetch upstream`, 
+and review/test the concerned pull requests, using `git switch pr/<number>`.
+
 ## License
 
 ```
