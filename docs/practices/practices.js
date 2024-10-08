@@ -1,7 +1,7 @@
 const practices = [
     {
-        name: "Agile",
-        radar: agileRadar
+        name: "Agile, Product & Design",
+        radar: agileproductdesignRadar
     },
     {
         name: "Data",
@@ -16,7 +16,7 @@ const practices = [
         radar: mobileRadar
     },
     {
-        name: "Modern Archi",
+        name: "Modern Architecture",
         radar: architectureRadar
     },
     {
